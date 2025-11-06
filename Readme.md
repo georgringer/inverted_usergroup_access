@@ -4,7 +4,7 @@
 
 This extension provides the possibility to negate the usergroup permissions in records.
 
-![Example](Resources/Public/Icons/Extension.svg)
+![Example](Resources/Public/Screenshots/example.png)
 
 ## Usage
 
