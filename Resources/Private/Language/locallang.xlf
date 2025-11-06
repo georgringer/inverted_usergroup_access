@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext">
+		<header/>
+		<body>
+			<trans-unit id="field.fe_group_negate">
+				<source>Negate 'Usergroup Access Rights'</source>
+			</trans-unit>
+			<trans-unit id="field.fe_group_negate.description">
+				<source>Whatever is selected above, it is negated.</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,35 @@
+{
+	"name": "georgringer/inverted-usergroup-access",
+	"description": "",
+	"license": "GPL-2.0-or-later",
+	"type": "typo3-cms-extension",
+	"keywords": [
+		"TYPO3",
+		"extension"
+	],
+	"authors": [
+		{
+			"name": "Georg Ringer",
+			"homepage": "https://ringer.it",
+			"role": "Developer"
+		}
+	],
+	"homepage": "https://github.com/georgringer/invert_usergroup_access",
+	"support": {
+		"issues": "https://github.com/georgringer/invert_usergroup_access/issues",
+		"source": "https://github.com/georgringer/invert_usergroup_access"
+	},
+	"require": {
+		"typo3/cms-backend": "^12.4.38 || ^13.4.15"
+	},
+	"autoload": {
+		"psr-4": {
+			"GeorgRinger\\InvertedUsergroupAccess\\": "Classes"
+		}
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "inverted_usergroup_access"
+		}
+	}
+}

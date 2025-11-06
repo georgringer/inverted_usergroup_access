@@ -1,0 +1,16 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  GeorgRinger\InvertedUsergroupAccess\:
+    resource: '../Classes/*'
+
+  GeorgRinger\InvertedUsergroupAccess\Configuration:
+    public: true
+
+  GeorgRinger\InvertedUsergroupAccess\EventListener\ModifyDefaultConstraintsForDatabaseQueryEventListener:
+    tags:
+      - name: event.listener
+        event: TYPO3\CMS\Core\Domain\Event\ModifyDefaultConstraintsForDatabaseQueryEvent
