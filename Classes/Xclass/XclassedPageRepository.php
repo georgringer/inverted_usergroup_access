@@ -3,6 +3,7 @@
 namespace GeorgRinger\InvertedUsergroupAccess\Xclass;
 
 use GeorgRinger\InvertedUsergroupAccess\Configuration;
+use TYPO3\CMS\Core\Context\UserAspect;
 use TYPO3\CMS\Core\Database\ConnectionPool;
 use TYPO3\CMS\Core\Database\Query\QueryHelper;
 use TYPO3\CMS\Core\Domain\Repository\PageRepository;
@@ -91,9 +92,12 @@ class XclassedPageRepository extends PageRepository {
                     if (($ctrl['enablecolumns']['fe_group'] ?? false) && !($ignore_array['fe_group'] ?? false)) {
                         $field = $table . '.' . $ctrl['enablecolumns']['fe_group'];
 
+                        /** @var UserAspect $userAspect */
+                        $userAspect = $this->context->getAspect('frontend.user');
+
                         // XClass begin
                         $configuration = GeneralUtility::makeInstance(Configuration::class);
-                        if ($configuration->isValidTable($table)) {
+                        if ($configuration->isValidTable($table) && $userAspect->isLoggedIn()) {
                             $feGroupConstraint = QueryHelper::stripLogicalOperatorPrefix(
                                 $this->getMultipleGroupsWhereClause($field, $table)
                             );

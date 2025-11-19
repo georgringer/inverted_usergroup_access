@@ -7,7 +7,7 @@
 				<source>Negate 'Usergroup Access Rights'</source>
 			</trans-unit>
 			<trans-unit id="field.fe_group_negate.description">
-				<source>Whatever is selected above, it is negated.</source>
+				<source>Selected usergroup(s) above are negated if logged in.</source>
 			</trans-unit>
 		</body>
 	</file>

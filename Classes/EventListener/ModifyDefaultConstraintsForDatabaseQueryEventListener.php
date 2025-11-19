@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace GeorgRinger\InvertedUsergroupAccess\EventListener;
 
 use GeorgRinger\InvertedUsergroupAccess\Configuration;
+use TYPO3\CMS\Core\Context\UserAspect;
 use TYPO3\CMS\Core\Domain\Event\ModifyDefaultConstraintsForDatabaseQueryEvent;
 
 final readonly class ModifyDefaultConstraintsForDatabaseQueryEventListener
@@ -22,6 +23,13 @@ final readonly class ModifyDefaultConstraintsForDatabaseQueryEventListener
         if (!isset($constraints['fe_group'])) {
             return;
         }
+
+        /** @var UserAspect $userAspect */
+        $userAspect = $event->getContext()->getAspect('frontend.user');
+        if (!$userAspect->isLoggedIn()) {
+            return;
+        }
+
         if (!$this->configuration->isValidTable($event->getTable())) {
             return;
         }
