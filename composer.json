@@ -20,7 +20,7 @@
 		"source": "https://github.com/georgringer/invert_usergroup_access"
 	},
 	"require": {
-		"typo3/cms-backend": "^13.4.20"
+		"typo3/cms-backend": "^12.4.38"
 	},
 	"autoload": {
 		"psr-4": {

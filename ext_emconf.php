@@ -7,10 +7,10 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Georg Ringer',
     'author_email' => 'mail@ringer.it',
     'state' => 'alpha',
-    'version' => '2.0.0',
+    'version' => '1.0.0',
     'constraints' => [
         'depends' => [
-            'typo3' => '13.4.40-13.4.99',
+            'typo3' => '12.4.38-12.4.99',
         ],
         'conflicts' => [],
         'suggests' => [],
