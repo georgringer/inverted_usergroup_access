@@ -2,6 +2,7 @@
 
 $columns = [
     'fe_group_negate' => [
+        'exclude' => true,
         'label' => 'LLL:EXT:inverted_usergroup_access/Resources/Private/Language/locallang.xlf:field.fe_group_negate',
         'description' => 'LLL:EXT:inverted_usergroup_access/Resources/Private/Language/locallang.xlf:field.fe_group_negate.description',
         'config' => [

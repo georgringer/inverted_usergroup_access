@@ -4,10 +4,10 @@
 		<header/>
 		<body>
 			<trans-unit id="field.fe_group_negate">
-				<source>Negate 'Usergroup Access Rights'</source>
+				<source>Selected usergroup(s) above are negated if logged in.</source>
 			</trans-unit>
 			<trans-unit id="field.fe_group_negate.description">
-				<source>Selected usergroup(s) above are negated if logged in.</source>
+				<source>Element will be shown if the user is logged in and not in selected usergroup(s) above</source>
 			</trans-unit>
 		</body>
 	</file>

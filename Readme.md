@@ -37,3 +37,8 @@ $yourTableName = 'tx_your_table';
 // or add it directly to the list of fields
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes($yourTableName, 'fe_group_negate', '', 'after:fe_group');
 ```
+
+### Thanks to
+
+Special thanks to [OTH Amberg-Weiden](https://www.oth-aw.de/) for their generous support and sponsorship ❤️
+Their contribution made this project possible and helped create an environment where innovative ideas could grow.
