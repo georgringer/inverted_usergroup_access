@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file source-language="en" original="" datatype="plaintext" date="2025-12-21T21:43:38+01:00">
-		<header></header>
+	<file source-language="en" target-language="de" original="" datatype="plaintext" date="2025-12-21T21:43:38+01:00">
 		<body>
 			<trans-unit id="field.fe_group_negate">
 				<source>Selected usergroup(s) above are negated if logged in.</source>
+				<target>Ausgewählte Benutzergruppe(n) oberhalb werden negiert sofern eingeloggt</target>
 			</trans-unit>
 			<trans-unit id="field.fe_group_negate.description">
 				<source>Element will be shown if the user is logged in and not in selected usergroup(s) above</source>
+				<target>Das Element wird angezeigt, wenn der Benutzer angemeldet ist und nicht zu einer der oben ausgewählten Benutzergruppen gehört.</target>
 			</trans-unit>
 		</body>
 	</file>
