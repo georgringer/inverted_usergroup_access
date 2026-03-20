@@ -1,6 +1,6 @@
 {
 	"name": "georgringer/inverted-usergroup-access",
-	"description": "",
+	"description": "Provides the possibility to negate the usergroup permissions",
 	"license": "GPL-2.0-or-later",
 	"type": "typo3-cms-extension",
 	"keywords": [

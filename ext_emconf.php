@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Pinned Content',
-    'description' => 'Enhances the TYPO3 content element wizard with pinned items, templates, and personal pin lists for faster editing.',
+    'title' => 'Inverted Usergroup Access',
+    'description' => 'Provides the possibility to negate the usergroup permissions',
     'category' => 'be',
     'author' => 'Georg Ringer',
     'author_email' => 'mail@ringer.it',
